@@ -34,6 +34,14 @@ class shape {
 
 class Ball extends shape {
 
+  constructor(x, y, velx, vely, colour, size) {
+    super(x, y, velx, vely);
+
+    this.colour = colour;
+    this.size = size;
+    this.exists = true;
+  }
+  
   draw() {
     ctx.beginPath();
     ctx.fillStyle = this.color;
