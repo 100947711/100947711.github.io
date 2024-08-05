@@ -186,6 +186,12 @@ function loop() {
     ball.update();
     ball.collisionDetect();
   }
+}
+
+evilball.draw();
+evilball.checkbounds();
+evilball.collisionDetect();
+
 
   requestAnimationFrame(loop);
 }
