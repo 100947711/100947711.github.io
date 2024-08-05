@@ -43,3 +43,6 @@ class Ball {
       this.velX = -Math.abs(this.velX);
     }
     
+    if (this.x - this.size <= 0) {
+      this.velX = Math.abs(this.velX);
+    }
