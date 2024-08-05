@@ -154,12 +154,6 @@ class EvilCircle extends shape {
 
 }
 
-
-
-
-
-
-
 const balls = [];
 
 while (balls.length < 25) {
@@ -176,6 +170,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
+  para.textcontent = 'Ball count: ' + count;
 }
 
 function loop() {
